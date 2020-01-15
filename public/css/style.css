@@ -1,6 +1,29 @@
 /*Daves Edits*/
 /****************************************/
 
+@media (min-width: 768px) {
+  .navbar .navbar-nav {
+    font-family: "Poppins", Arial, sans-serif;
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+  }
+
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
 body {
   background: deepskyblue;
 }
@@ -72,6 +95,10 @@ body {
   font-weight: bold;
 }
 
+.first-title {
+  padding-top: 60px;
+}
+
 .centerDave {
   text-align: center;
   font-size: 17px;
@@ -120,4 +147,22 @@ mark.green {
   background-color: rgb(35, 244, 202);
 }
 
+.footer {
+  margin-bottom: 0px;
+  height: 60px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.footer p {
+  font-family: "Poppins", Arial, sans-serif;
+  padding-top: 20px;
+  margin-bottom: 0px;
+}
+
+.navbar{
+  top: 10px;
+}
 /****************************************/
