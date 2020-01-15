@@ -1,0 +1,1 @@
+console.log("This is a client side JavaScript File")

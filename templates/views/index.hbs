@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!--Partial Using HBS    -->
+    {{> headInfo }}
+</head>
+
+<body>
+
+<div class="wrapper d-flex align-items-stretch">
+    <nav id="sidebar">
+        <div class="custom-menu">
+            <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                <i class="fa fa-bars"></i>
+                <span class="sr-only">Toggle Menu</span>
+            </button>
+        </div>
+        <div class="p-4 pt-5">
+            <h1><a href="" class="logo">Dave Tetreault</a></h1>
+            <ul class="list-unstyled components mb-5">
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">Suprise #1</a>
+                        </li>
+                        <li>
+                            <a href="#">Suprise #2</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+
+                <li class="active">
+                    <a href="#contactSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Contact</a>
+                    <ul class="collapse list-unstyled" id="contactSubmenu">
+                        <li>
+                            <a href="#">LinkedIn</a>
+                        </li>
+                        <li>
+                            <a href="#">Email</a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+
+<!--            <div class="footer">-->
+<!--                <p>&lt;!&ndash; Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. &ndash;&gt;-->
+<!--                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>-->
+<!--                    &lt;!&ndash; Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. &ndash;&gt;</p>-->
+<!--            </div>-->
+
+        </div>
+    </nav>
+
+    <!-- Page Content  -->
+    <!-- ************************************************************************   -->
+
+    <div id="content" class="p-4 p-md-5 pt-5">
+
+        <div class="container align-content-center">
+            <div class="row">
+                <div class="col">
+                </div>
+            </div>
+        </div>
+
+        <div class="container align-content-center">
+            <div class="row">
+                <div class="col">
+                    <h1 class="center-text landingPageFont">&bull;  Who?  </h1>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col extra-bottom main-text">
+
+                    I'm <mark class="green">Dave</mark>, a young ambitious junior developer looking to expand my <mark class="green">development</mark> and <mark class="green">programming</mark> skills!
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container align-content-center">
+            <div class="row">
+                <div class="col">
+                    <h1 class="center-text landingPageFont">What I've Practiced  &bull;</h1>
+                </div>
+            </div>
+
+
+            <div class="row">
+
+                <div class="col-lg-6">
+                    <div class="box effect2">
+                        <h3>Languages</h3>
+                        <br>
+                            <div class="row">
+                                <div class="col-sm-1"></div>
+                                <div class="col-sm-3">
+                                    Java
+                                </div>
+                                <div class="col-sm-6">
+                                    <div id="progressbar" style="border: 0px; width: 80%;"></div>
+                                </div>
+                                <div class="col-sm-1">
+                                    80%
+                                </div>
+                                <div class="col-sm-1"></div>
+                            </div>
+
+                            <br>
+                            <div class="row">
+                                <div class="col-sm-1"></div>
+                                <div class="col-sm-3">
+                                    C++
+                                </div>
+                                <div class="col-sm-6">
+                                    <div id="progressbar2" style="border: 0px; width: 70%;"></div>
+                                </div>
+                                <div class="col-sm-1">
+                                    70%
+                                </div>
+                                <div class="col-sm-1"></div>
+                            </div>
+                            <br>
+
+                            <div class="row">
+                                <div class="col-sm-1"></div>
+                                <div class="col-sm-3">
+                                    JavaScript
+                                </div>
+                                <div class="col-sm-6">
+                                    <div id="progressbar3" style="border: 0px; width: 40%;"></div>
+                                </div>
+                                <div class="col-sm-1">
+                                    40%
+                                </div>
+                                <div class="col-sm-1"></div>
+                             </div>
+                             <br>
+
+                            <div class="row">
+                                <div class="col-sm-1"></div>
+                                <div class="col-sm-3">
+                                    Swift
+                                </div>
+                                <div class="col-sm-6">
+                                    <div id="progressbar4" style="border: 0px; width: 60%;"></div>
+                                </div>
+                                <div class="col-sm-1">
+                                    60%
+                                </div>
+                                <div class="col-sm-1"></div>
+                            </div>
+                        <br>
+                            <div class="row">
+                                <div class="col-sm-1"></div>
+                                <div class="col-sm-3">
+                                    Python
+                                </div>
+                                <div class="col-sm-3">
+                                    <div id="progressbar5" style="border: 0px; width: 20%;"></div>
+                                </div>
+                                <div class="col-sm-4" style="text-align: right; padding-right: 0px">
+                                    In Progress
+                                </div>
+                                <div class="col-sm-1"></div>
+                            </div>
+                        <br>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="box effect2">
+                        <h3>More Importantly</h3>
+                        <br>
+                        <div class="row">
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-11">
+                                <ul>
+                                    <li class="box-list">Design Patterns</li>
+                                    <li class="box-list">Modularity in Development</li>
+                                    <li class="box-list">Low Coupling</li>
+                                    <li class="box-list">High Cohesion</li>
+                                    <li class="box-list">Understanding Framework Functionality</li>
+                                    <li class="box-list">Debugging</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <div class="container align-content-center">
+            <div class="row">
+                <div class="col">
+                    <h1 class="center-text landingPageFont">&bull;  Contact  </h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4"></div>
+
+                <div class="col-md-2">
+                      <div class="box effect2" style="width: 60px;padding-bottom: 5px">
+                          <div class="centerDave">
+                              <a href="https://www.linkedin.com/in/dave-tetreault-abc000/"><img class="linkin"src="/img/linkin.png"></a>
+                          </div>
+                      </div>
+                  </div>
+
+                <div class="col-md-2">
+                    <div class="box effect2" style="width: 60px;padding-bottom: 5px">
+                        <div class="centerDave">
+                            <img class="linkin"src="/img/mail.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+            <br>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- ************************************************************************   -->
+
+<!--<script src="/js/jquery.min.js"></script>-->
+<script src="/js/popper.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+</body>
+</html>
