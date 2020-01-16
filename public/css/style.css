@@ -40,7 +40,6 @@ body {
 .box h3{
   text-align:center;
   position:relative;
-  top:10px;
   font-family: "Poppins", Arial, sans-serif;
   font-weight: bold;
   font-size: 16px;
@@ -118,6 +117,7 @@ body {
 
 .box-list {
   padding-bottom: 5px;
+  font-family: "Poppins", Arial, sans-serif;
 }
 
 mark.green {
@@ -158,11 +158,23 @@ mark.green {
 
 .footer p {
   font-family: "Poppins", Arial, sans-serif;
-  padding-top: 20px;
   margin-bottom: 0px;
 }
 
 .navbar{
   top: 10px;
+}
+
+#mario{
+  position: relative;
+}
+
+.bottom-right-box{
+
+height: 100px;
+}
+
+.link{
+  color: black;
 }
 /****************************************/

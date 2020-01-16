@@ -46,7 +46,29 @@ $( function() {
 
     //*******************************************************************************
 
+    //Mario
 
+    //const marioElement = $("#mario");
+
+    let width = "+=" + $(document).width();
+
+    movingMario();
+
+    function movingMario() {
+
+        $("#mario").animate({
+            left: width
+        }, 6000, function() {
+            // Animation complete, mario has moved off the screen
+            $("#mario").css("left", "-80px");
+            movingMario();
+        });
+    };
+
+
+
+
+    //*******************************************************************************
     var $navbar = $("#mNavbar");
 
     AdjustHeader(); // Incase the user loads the page from halfway down (or something);
