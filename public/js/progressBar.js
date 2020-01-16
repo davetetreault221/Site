@@ -41,33 +41,31 @@ $( function() {
     }
 
     blockElement.append("<img src=\"/img/block.png\" style=\"width: 30px; height: 60px\">")
-
-
-
     //*******************************************************************************
 
-    //Mario
-
-    //const marioElement = $("#mario");
-
-    let width = "+=" + $(document).width();
+    //Making Mario Move Across the Screen
+    //*******************************************************************************
+    let width =  $(document).width();
 
     movingMario();
 
-    function movingMario() {
+    function movingMario()
+    {
+        $( "#mario" ).animate({ "left": "+="+width+"px" }, 5000,
 
-        $("#mario").animate({
-            left: width
-        }, 6000, function() {
-            // Animation complete, mario has moved off the screen
-            $("#mario").css("left", "-80px");
-            movingMario();
-        });
+            //After Animation is Complete
+           function() {
+            $("#mario").css("left","0px");
+                movingMario()
+             }
+        );
+
     };
 
+    //*******************************************************************************
 
 
-
+    //Navigation Bar
     //*******************************************************************************
     var $navbar = $("#mNavbar");
 
@@ -92,6 +90,8 @@ $( function() {
             $navbar.css("top", "0px");
         }
     }
+    //*******************************************************************************
+
 
 //Closing Tag for "Document is Ready Function"
 // ***********************************************

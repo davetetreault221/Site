@@ -7,12 +7,37 @@
     display: inline-block;
     float: none;
     vertical-align: top;
+
+  }
+
+  .python-word{
+    text-align: right;
+    padding-right: 0px
   }
 
   .navbar .navbar-collapse {
     text-align: center;
   }
 }
+
+@media (max-width: 500px) {
+
+
+  /* CSS that should be displayed if width is equal to or less than 800px goes here */
+  .progress-bar-container {
+    text-align: center;
+  }
+
+  .python-word{
+    text-align: center;
+
+  }
+
+  .inside-bar {
+    margin: auto;
+  }
+}
+
 
 .navbar .navbar-nav {
   display: inline-block;
@@ -167,11 +192,12 @@ mark.green {
 
 #mario{
   position: relative;
+  display: block;
 }
 
 .bottom-right-box{
 
-height: 100px;
+height: auto;
 }
 
 .link{
