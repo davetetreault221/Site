@@ -19,72 +19,25 @@ hbs.registerPartials(partialsPath)
 app.use(express.static(publicDirectoryPath))
 
 app.get('', (req,res) => {
-    res.render('index', {
-                        title: 'Daves Life',
-                        name: 'Dave Tetreault'
-    })
-})
-
-
-//Sending JSON
-app.get('/help', (req, res) => {
-    res.send({
-        name: 'Dave',
-        age: '26'
-    })
+    res.render('index');
 })
 
 //Rendering the ABOUT page
 app.get('/about', (req, res) => {
-
-    res.render('about', {
-                    title: 'About Page',
-                    name: 'Dave Tetreault'
-    })
-
-})
-
-// Used Purely For Testing
-//************************************************************
-app.get('/testing', (req, res) => {
-
-    let name;
-
-    if(req.query.hello) {
-        name = req.query.hello;
-    }
-    else
-    {
-        name = "Unknown";
-    }
-
-
-    res.render('testing', {
-        title: 'About Page',
-        name: name
-    })
-
-});
-//************************************************************
-
-
-
-app.get('/weather', (req, res) => {
-
-    res.send('This is the WEATHER PAGE')
-
+    res.render('about');
 })
 
 
-//This is how to set up a 404 page
-
+//404 Page
+//**************************************************
 app.get('*', (req, res) => {
 
-    res.send('This is a 404 PAGE')
+    res.send('404 PAGE NOT FOUND')
 
 })
+//**************************************************
 
 app.listen(3000, () => {
 
-    console.log('Hey Dawg')
+    console.log('Server Started')
 })
