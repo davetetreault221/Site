@@ -16,13 +16,17 @@
   }
 
   .navbar .navbar-collapse {
+
     text-align: center;
   }
 }
 
 @media (max-width: 500px) {
 
-
+  .navbar-toggle {
+    float: left;
+    left: 10px;
+  }
   /* CSS that should be displayed if width is equal to or less than 800px goes here */
   .progress-bar-container {
     text-align: center;
@@ -36,6 +40,7 @@
   .inside-bar {
     margin: auto;
   }
+
 }
 
 
@@ -193,6 +198,7 @@ mark.green {
 #mario{
   position: relative;
   display: block;
+  left: -80px;
 }
 
 .bottom-right-box{
@@ -202,5 +208,20 @@ height: auto;
 
 .link{
   color: black;
+}
+
+.close-button{
+  text-align: center;
+  margin: auto;
+  display: block;
+}
+
+.modal-para {
+  text-align: center;
+}
+
+.modal a.close-modal{
+  top: 3.5px;
+  right: 3.5px;
 }
 /****************************************/
