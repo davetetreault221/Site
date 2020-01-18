@@ -67,15 +67,16 @@ $( function() {
     //Making Mario Move Across the Screen
     //*******************************************************************************
     //Setting to the width of the screen and adding the size of Mario
-    let width =  $(document).width();
-    width -= 80;
     movingMario();
 
     function movingMario()
     {
+        let width =  $(document).width();
+        width -= 80;
+
         $( "#mario" ).animate({ "left": "+="+width+"px" }, 5000,
 
-            //After Animation is Complete
+            //After Animation is Complete (Callback)
            function() {
             $("#mario").css("left","-80px");
                 movingMario()
@@ -151,11 +152,8 @@ $( function() {
 
     function windowResized(){
 
-        console.log("Window Has been resized");
-
         //Remove Blocks
         //*******************************************
-
         $("#block-footer").empty();
         $("#block-footer").append("<img src=\"/img/block.png\" style=\"width: 60px;\">");
         settingBlocks();
@@ -163,8 +161,6 @@ $( function() {
         //*******************************************
     }
     //*******************************************************************************
-
-
 
 //Closing Tag for "Document is Ready Function"
 // ***********************************************
