@@ -21,13 +21,14 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
+
+  /* CSS that should be displayed if width is equal to or less than 800px goes here */
 
   .navbar-toggle {
     float: left;
     left: 10px;
   }
-  /* CSS that should be displayed if width is equal to or less than 800px goes here */
   .progress-bar-container {
     text-align: center;
   }

@@ -27,41 +27,40 @@ $( function() {
     // Setting the proper amount of blocks at the bottom of the screen
     //*******************************************************************************
 
-    //Getting window width in pixels
-    const windowWidth = window.innerWidth;
+    settingBlocks();
 
-    //Grabbing the parent element for the blocks
-    const blockElement = $( "#block-footer" );
+    function settingBlocks () {
 
-    let numBlocksNeeded = windowWidth/60;
-    numBlocksNeeded = Math.round(numBlocksNeeded) - 1;
+        //Getting window width in pixels
+        const windowWidth = window.innerWidth;
 
-    for (let i = 0; i < numBlocksNeeded; i++) {
-        blockElement.append("<img src=\"/img/block.png\" style=\"width: 60px;\">")
+        //Grabbing the parent element for the blocks
+        const blockElement = $("#block-footer");
+
+        let numBlocksNeeded = windowWidth / 60;
+        numBlocksNeeded = Math.round(numBlocksNeeded) - 1;
+
+        for (let i = 0; i < numBlocksNeeded; i++) {
+            blockElement.append("<img src=\"/img/block.png\" style=\"width: 60px;\">")
+        }
+
+        //Setting the best fit last block on the right hand side
+        let totalWidthOfBlocks = numBlocksNeeded * 60;
+        let widthToAdd = 0;
+
+        if (totalWidthOfBlocks > windowWidth) {
+            let difference = totalWidthOfBlocks - windowWidth;
+
+            widthToAdd = difference - 30;
+
+            Math.abs(widthToAdd);
+        } else {
+            let difference = windowWidth - totalWidthOfBlocks;
+            widthToAdd = difference - 40;
+        }
+
+        blockElement.append("<img src=\"/img/block.png\" style=\"width: " + widthToAdd + "px; height: 60px\">")
     }
-
-    //Setting the best fit block
-    let totalWidthOfBlocks = numBlocksNeeded * 60;
-    let widthToAdd = 0;
-
-    if(totalWidthOfBlocks > windowWidth)
-    {
-        let difference = totalWidthOfBlocks - windowWidth;
-
-        widthToAdd = difference - 30;
-
-        Math.abs(widthToAdd);
-    }
-    else
-    {
-        let difference =  windowWidth - totalWidthOfBlocks;
-        widthToAdd = difference - 40;
-
-    }
-
-    console.log(widthToAdd);
-
-    blockElement.append("<img src=\"/img/block.png\" style=\"width: "+widthToAdd+"px; height: 60px\">")
 
     //*******************************************************************************
 
@@ -70,7 +69,7 @@ $( function() {
     //Setting to the width of the screen and adding the size of Mario
     let width =  $(document).width();
     width -= 80;
-    movingMario();
+    //movingMario();
 
     function movingMario()
     {
@@ -144,6 +143,27 @@ $( function() {
         }
     }
     //*******************************************************************************
+
+
+    //Takes Care of the Blocks on the window resize
+    //*******************************************************************************
+    window.addEventListener('resize', windowResized);
+
+    function windowResized(){
+
+        console.log("Window Has been resized");
+
+        //Remove Blocks
+        //*******************************************
+
+        $("#block-footer").empty();
+        $("#block-footer").append("<img src=\"/img/block.png\" style=\"width: 60px;\">");
+        settingBlocks();
+
+        //*******************************************
+    }
+    //*******************************************************************************
+
 
 
 //Closing Tag for "Document is Ready Function"
