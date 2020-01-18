@@ -69,7 +69,7 @@ $( function() {
     //Setting to the width of the screen and adding the size of Mario
     let width =  $(document).width();
     width -= 80;
-    //movingMario();
+    movingMario();
 
     function movingMario()
     {
