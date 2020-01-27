@@ -38,28 +38,17 @@ $( function() {
         const blockElement = $("#block-footer");
 
         let numBlocksNeeded = windowWidth / 60;
-        numBlocksNeeded = Math.round(numBlocksNeeded) - 1;
+        numBlocksNeeded = Math.floor(numBlocksNeeded);
 
         for (let i = 0; i < numBlocksNeeded; i++) {
             blockElement.append("<img src=\"/img/block.png\" style=\"width: 60px;\">")
         }
 
-        //Setting the best fit last block on the right hand side
-        let totalWidthOfBlocks = numBlocksNeeded * 60;
-        let widthToAdd = 0;
+        numBlocksNeeded = numBlocksNeeded * 60;
 
-        if (totalWidthOfBlocks > windowWidth) {
-            let difference = totalWidthOfBlocks - windowWidth;
+        const sizeDiff = windowWidth - numBlocksNeeded;
 
-            widthToAdd = difference - 30;
-
-            Math.abs(widthToAdd);
-        } else {
-            let difference = windowWidth - totalWidthOfBlocks;
-            widthToAdd = difference - 40;
-        }
-
-        blockElement.append("<img src=\"/img/block.png\" style=\"width: " + widthToAdd + "px; height: 60px\">")
+        blockElement.append("<img src=\"/img/block.png\" style=\"width: " + sizeDiff + "px; height: 60px\">")
     }
 
     //*******************************************************************************
@@ -136,9 +125,6 @@ $( function() {
 
             }
         } else {
-            // $navbar.removeClass("navbar-fixed-top");
-            // $navbar.css("top", "10px");
-
             $navbar.addClass("navbar-fixed-top");
             $navbar.css("top", "0px");
         }
@@ -155,7 +141,6 @@ $( function() {
         //Remove Blocks
         //*******************************************
         $("#block-footer").empty();
-        $("#block-footer").append("<img src=\"/img/block.png\" style=\"width: 60px;\">");
         settingBlocks();
 
         //*******************************************

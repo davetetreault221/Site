@@ -89,6 +89,14 @@ body {
   position: relative;
 }
 
+.todoApp{
+  width: 60px;
+  text-align: center;
+  position: relative;
+  background: dodgerblue;
+  border: double;
+}
+
 .effect2:before, .effect2:after
 {
   z-index: -1;
