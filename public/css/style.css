@@ -1,80 +1,70 @@
 /*Daves Edits*/
 /****************************************/
-
-@media (min-width: 768px) {
-  .navbar .navbar-nav {
-    font-family: "Poppins", Arial, sans-serif;
-    display: inline-block;
-    float: none;
-    vertical-align: top;
-
-  }
-
-  .python-word{
-    text-align: right;
-    padding-right: 0px
-  }
-
-  .navbar .navbar-collapse {
-
-    text-align: center;
-  }
-}
-
-@media (max-width: 768px) {
-
-  /* CSS that should be displayed if width is equal to or less than 800px goes here */
-
-  .navbar-toggle {
-    float: left;
-    left: 10px;
-  }
-  .progress-bar-container {
-    text-align: center;
-  }
-
-  .python-word{
-    text-align: center;
-
-  }
-
-  .inside-bar {
-    margin: auto;
-  }
-
-}
-
-
-.navbar .navbar-nav {
-  display: inline-block;
-  float: none;
-  vertical-align: top;
-}
-
-.navbar .navbar-collapse {
-  text-align: center;
-}
-
 body {
   background: deepskyblue;
+  font-family: "Poppins", Arial, sans-serif;
+
 }
 
-.center-text {
+.header-container{
+  background-color: black;
+  min-height: 50px;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
 
+}
+
+#content{
+  padding-top: 50px;
+}
+
+header img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.bold{
+  color:deepskyblue;
+  font-weight: bold;
+}
+
+header{
+  min-height: 70px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding:10px 5px;
+}
+
+.nav-buttons {
+  color: white;
+  text-decoration: none;
+  padding: 10px 25px;
+  margin-left: 10px;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.bottom-contact{
+  margin-top: 25px;
   text-align: center;
 }
-.main-text {
-  text-align: left;
+
+.intro-text {
+  text-align: center;
   font-size: 17px;
 }
 
 .box h3{
   text-align:center;
   position:relative;
-  font-family: "Poppins", Arial, sans-serif;
   font-weight: bold;
   font-size: 16px;
-
+  padding-bottom: 7px;
 }
 .box {
   width:80%;
@@ -95,6 +85,12 @@ body {
   position: relative;
   background: dodgerblue;
   border: double;
+}
+
+.webApp{
+  width: 60px;
+  text-align: center;
+  position: relative;
 }
 
 .effect2:before, .effect2:after
@@ -131,32 +127,16 @@ body {
 .landingPageFont {
   font-family: "Poppins", Arial, sans-serif;
   font-weight: bold;
-}
-
-.first-title {
-  padding-top: 60px;
-}
-
-.centerDave {
+  padding-top: 30px;
   text-align: center;
-  font-size: 17px;
-}
-
-.greenDot {
-  width: 10px;
-  left: 50%;
-  position: absolute;
 }
 
 .extra-bottom {
-
   margin-bottom: 40px;
-
 }
 
 .box-list {
   padding-bottom: 5px;
-  font-family: "Poppins", Arial, sans-serif;
 }
 
 mark.green {
@@ -200,10 +180,6 @@ mark.green {
   margin-bottom: 0px;
 }
 
-.navbar{
-  top: 10px;
-}
-
 #mario{
   position: relative;
   display: block;
@@ -211,8 +187,7 @@ mark.green {
 }
 
 .bottom-right-box{
-
-height: auto;
+  height: auto;
 }
 
 .link{
@@ -233,4 +208,131 @@ height: auto;
   top: 3.5px;
   right: 3.5px;
 }
+
+.mob-wrapper{
+  display: none;
+}
+
+.box-description{
+  text-align: center;
+  margin: 10px 10px;
+}
+
+.inside-bar {
+  text-align: center;
+}
+
+
+/* Tablet View */
+/********************************************************************/
+@media (max-width: 768px)
+{
+  .mob-nav{
+    display: flex;
+    position: absolute;
+    right: 0;
+    width: 100%;
+  }
+
+   .mob-nav-buttons{
+    background-color: black;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    color: white;
+    margin: 15px auto;
+   }
+
+  .portfolio
+  {
+    display: none;
+  }
+  .box-description
+  {
+    max-width: 500px;
+    margin: 0 10px;
+    padding-bottom: 15px;
+  }
+
+  .landingPageFont
+  {
+    font-size: 30px;
+  }
+
+  .intro-text
+  {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .mob-wrapper{
+    display: block;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  .burger-menu
+  {
+    width: 50px;
+  }
+
+  .progress-bar-container {
+    text-align: center;
+  }
+
+  .python-word{
+    text-align: center;
+
+  }
+
+  .inside-bar {
+    text-align: left;
+    margin: auto;
+  }
+}
+/********************************************************************/
+
+
+
+/* Mobile View */
+/********************************************************************/
+@media (max-width: 500px)
+{
+  .mob-nav-buttons{
+    background-color: black;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    color: white;
+    margin: 15px auto;
+  }
+
+  .box-description
+  {
+    max-width: 350px;
+    margin: 0 10px;
+  }
+
+  .intro-text
+  {
+    max-width: 330px;
+    font-size: 16px;
+  }
+
+  .landingPageFont
+  {
+    font-size: 25px;
+  }
+
+  .inside-bar {
+    margin: auto;
+  }
+
+}
+/********************************************************************/
+
 /****************************************/

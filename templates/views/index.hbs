@@ -7,27 +7,31 @@
 
 <body>
 
-    <div class="container">
-        <nav class="navbar navbar-inverse" id="mNavbar">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" id="toggle">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
+    <div class="header-container">
+
+        <header>
+            <div><img src="/img/android-chrome-512x512.png"><span class="bold">Dave Tetreault</span><span class="portfolio"> - Portfolio</span></div>
+            <nav>
+                <a id="contact" class="nav-buttons">Contact</a>
+                <a href="https://github.com/davetetreault221" class="nav-buttons">Github</a>
+                <a href="https://www.linkedin.com/in/dave-tetreault-abc000" class="nav-buttons">LinkedIn</a>
+            </nav>
+
+
+            <div class="mob-wrapper">
+
+                <img src="/img/burger.png" class="burger-menu">
+
+                <div class="mob-nav" style="display: none;">
+                    <a id="contact-nav" class="mob-nav-buttons">Contact</a>
+                    <a href="https://github.com/davetetreault221" class="mob-nav-buttons">Github</a>
+                    <a href="https://www.linkedin.com/in/dave-tetreault-abc000" class="mob-nav-buttons">LinkedIn</a>
                 </div>
 
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li id="home"><a >Home</a></li>
-                        <li id="github"><a href="https://github.com/davetetreault221">Github</a></li>
-                        <li id="contact"><a href="#section3">Contact</a></li>
-                    </ul>
-                </div>
             </div>
-        </nav>
+
+
+        </header>
     </div>
 
     <!-- Page Content  -->
@@ -45,7 +49,7 @@
         <div class="container align-content-center">
             <div class="row">
                 <div class="col">
-                    <h1 class="center-text landingPageFont first-title">&bull;  Who?  </h1>
+                    <h1 class="landingPageFont">&bull;  Who?  </h1>
                 </div>
             </div>
         </div>
@@ -53,7 +57,7 @@
 
         <div class="container">
             <div class="row">
-                <div class="col extra-bottom main-text centerDave">
+                <div class="col intro-text">
 
                     I'm <mark class="green">Dave</mark>, a young ambitious junior developer looking to expand my <mark class="green">development</mark> and <mark class="green">programming</mark> skills!
 
@@ -65,7 +69,7 @@
 
             <div class="row">
                 <div class="col">
-                    <h1 class="center-text landingPageFont">What I've Practiced  &bull;</h1>
+                    <h1 class="landingPageFont">What I've Practiced  &bull;</h1>
                 </div>
             </div>
 
@@ -75,8 +79,6 @@
                 <div class="col-lg-6">
                     <div class="box effect2">
                         <h3>Languages</h3>
-                        <br>
-
                             <div class="row">
                                 <div class="progress-bar-container">
                                     <div class="col-sm-1"></div>
@@ -172,7 +174,7 @@
 
                         <h3>Lastest Project</h3>
 
-                        <p style="text-align: center">My latest project can be found by clicking on the icon below, here's what it's composed of:</p>
+                        <p class="box-description">My latest project can be found by clicking on the icon below, here's what it's composed of:</p>
 
                         <ul>
                             <li class="box-list">Node.JS Framework with Express</li>
@@ -180,6 +182,7 @@
                             <li class="box-list">Mongoose.JS</li>
                             <li class="box-list">JQuery</li>
                             <li class="box-list">JWT (JSON Web Tokens Library) </li>
+                            <li class="box-list">Understanding of REST API</li>
                             <li class="box-list"><a href="#appDes" rel="modal:open">Click here for a small description!</a></li>
                         </ul>
 
@@ -195,7 +198,6 @@
                 <div class="col-lg-6">
                     <div class="box effect2">
                         <h3>More Importantly</h3>
-                        <br>
                         <div class="row">
                             <div class="col-sm-1"></div>
                             <div class="col-sm-11">
@@ -208,6 +210,7 @@
                                     <li class="box-list">Debugging</li>
                                     <li class="box-list">Version Control (Github)</li>
                                 </ul>
+                                <br>
                             </div>
                         </div>
                     </div>
@@ -219,6 +222,15 @@
                                 <li>For small projects that I've put together <img src="/img/github.png" style="width: 35px;"></li>
                             </a>
                         </ul>
+                        <br>
+                    </div>
+
+                    <div class="box effect2 bottom-right-box">
+                        <h3>Responsive Web Design</h3>
+                        <p class="box-description">A simple website put together to display an understanding of responsive web design, click on the icon below to check it out!</p>
+                        <div style="text-align: center;">
+                            <a href="https://tetreault-responsive.herokuapp.com/index.html"><img class="webApp"src="/img/resWeb.png"></a>
+                        </div>
                         <br>
                     </div>
 
@@ -239,7 +251,7 @@
 
                 <div class="col-md-2">
                       <div class="box effect2" style="width: 100px; height: 100px; padding-bottom: 5px">
-                          <div class="centerDave" style="margin-top: 25px;">
+                          <div class="bottom-contact">
                               <a href="https://www.linkedin.com/in/dave-tetreault-abc000/"><img class="linkin"src="/img/linkin.png"></a>
                           </div>
                       </div>
@@ -247,7 +259,7 @@
 
                 <div class="col-md-2">
                     <div class="box effect2" style="width: 100px; height: 100px; padding-bottom: 5px">
-                        <div class="centerDave" style="margin-top: 25px;">
+                        <div class="bottom-contact">
                             <a href="#ex1" rel="modal:open">
                                 <img class="linkin"src="/img/mail.png">
                             </a>
@@ -294,8 +306,7 @@
             <p>Dave Tetreault&copy;</p>
         </div>
 
-    <script src="/js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-
+    <script src="/js/main.js"></script>
 </body>
 </html>
