@@ -6,6 +6,26 @@ body {
 
 }
 
+.progress-bar-success-pro {
+  background-color: dodgerblue;
+  width: 80%;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.progress-bar-danger
+{
+  background-color: darkblue;
+}  
+
+.progress-bar-success-med {
+  background-color: deepskyblue;
+  width: 80%;
+  font-weight: 400;
+  font-size: 13px;  
+}
+
+
 .header-container{
   background-color: black;
   min-height: 50px;
@@ -227,6 +247,13 @@ mark.green {
 /********************************************************************/
 @media (max-width: 768px)
 {
+
+  .progress-bar-container
+  {
+    width: 80%;
+    margin: auto;
+  }
+
   .mob-nav{
     display: flex;
     position: absolute;
@@ -301,6 +328,19 @@ mark.green {
 /********************************************************************/
 @media (max-width: 500px)
 {
+
+  .small-text-progress
+  {
+      margin-bottom: 7px;
+
+  }
+
+  .progress-bar-container
+  {
+    width: 80%;
+    margin: auto;
+  }
+
   .mob-nav-buttons{
     background-color: black;
     padding: 15px 30px;

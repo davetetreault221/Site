@@ -12,25 +12,25 @@ $( function() {
 
     //Setting up all the progress bars
     //*******************************************************************************
-    $( "#progressbar" ).progressbar({
-        value: false
-    });
+    // $( "#progressbar" ).progressbar({
+    //     value: false
+    // });
 
-    $( "#progressbar2" ).progressbar({
-        value: false
-    });
+    // $( "#progressbar2" ).progressbar({
+    //     value: false
+    // });
 
-    $( "#progressbar3" ).progressbar({
-        value: false
-    });
+    // $( "#progressbar3" ).progressbar({
+    //     value: false
+    // });
 
-    $( "#progressbar4" ).progressbar({
-        value: false
-    });
+    // $( "#progressbar4" ).progressbar({
+    //     value: false
+    // });
 
-    $( "#progressbar5" ).progressbar({
-        value: false
-    });
+    // $( "#progressbar5" ).progressbar({
+    //     value: false
+    // });
     //*******************************************************************************
 
 
